@@ -41,9 +41,9 @@
             this.ComboBox_city = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combox_area = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combox_prov = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -73,9 +73,9 @@
             this.panel1.Controls.Add(this.ComboBox_city);
             this.panel1.Controls.Add(this.guna2HtmlLabel4);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Controls.Add(this.guna2ComboBox2);
+            this.panel1.Controls.Add(this.combox_area);
             this.panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.panel1.Controls.Add(this.guna2ComboBox3);
+            this.panel1.Controls.Add(this.combox_prov);
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 229);
@@ -234,26 +234,26 @@
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "المدينة";
             // 
-            // guna2ComboBox2
+            // combox_area
             // 
-            this.guna2ComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.combox_area.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(52, 69);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(127, 36);
-            this.guna2ComboBox2.TabIndex = 5;
-            this.guna2ComboBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.combox_area.BackColor = System.Drawing.Color.Transparent;
+            this.combox_area.BorderColor = System.Drawing.Color.Silver;
+            this.combox_area.BorderRadius = 4;
+            this.combox_area.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combox_area.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_area.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_area.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combox_area.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combox_area.ItemHeight = 30;
+            this.combox_area.Location = new System.Drawing.Point(52, 69);
+            this.combox_area.Name = "combox_area";
+            this.combox_area.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.combox_area.Size = new System.Drawing.Size(127, 36);
+            this.combox_area.TabIndex = 5;
+            this.combox_area.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2HtmlLabel3
             // 
@@ -268,25 +268,25 @@
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "المحافظة";
             // 
-            // guna2ComboBox3
+            // combox_prov
             // 
-            this.guna2ComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox3.BorderRadius = 4;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(214, 69);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(132, 36);
-            this.guna2ComboBox3.TabIndex = 6;
-            this.guna2ComboBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.combox_prov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.combox_prov.BackColor = System.Drawing.Color.Transparent;
+            this.combox_prov.BorderColor = System.Drawing.Color.Silver;
+            this.combox_prov.BorderRadius = 4;
+            this.combox_prov.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combox_prov.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combox_prov.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_prov.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_prov.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combox_prov.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combox_prov.ItemHeight = 30;
+            this.combox_prov.Location = new System.Drawing.Point(214, 69);
+            this.combox_prov.Name = "combox_prov";
+            this.combox_prov.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.combox_prov.Size = new System.Drawing.Size(132, 36);
+            this.combox_prov.TabIndex = 6;
+            this.combox_prov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -526,9 +526,9 @@
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_city;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox combox_area;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox combox_prov;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
