@@ -36,7 +36,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.text_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.create_date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ComboBox_city = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -68,7 +68,7 @@
             this.panel1.Controls.Add(this.guna2HtmlLabel2);
             this.panel1.Controls.Add(this.guna2HtmlLabel5);
             this.panel1.Controls.Add(this.text_name);
-            this.panel1.Controls.Add(this.guna2DateTimePicker1);
+            this.panel1.Controls.Add(this.create_date);
             this.panel1.Controls.Add(this.guna2HtmlLabel6);
             this.panel1.Controls.Add(this.ComboBox_city);
             this.panel1.Controls.Add(this.guna2HtmlLabel4);
@@ -155,24 +155,24 @@
             this.text_name.Size = new System.Drawing.Size(224, 36);
             this.text_name.TabIndex = 1;
             // 
-            // guna2DateTimePicker1
+            // create_date
             // 
-            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Silver;
-            this.guna2DateTimePicker1.BorderRadius = 4;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(573, 173);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(257, 36);
-            this.guna2DateTimePicker1.TabIndex = 13;
-            this.guna2DateTimePicker1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 11, 24, 0, 0, 0, 0);
+            this.create_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.create_date.BackColor = System.Drawing.Color.Silver;
+            this.create_date.BorderRadius = 4;
+            this.create_date.BorderThickness = 1;
+            this.create_date.Checked = true;
+            this.create_date.FillColor = System.Drawing.Color.White;
+            this.create_date.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.create_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.create_date.Location = new System.Drawing.Point(573, 173);
+            this.create_date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.create_date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.create_date.Name = "create_date";
+            this.create_date.Size = new System.Drawing.Size(257, 36);
+            this.create_date.TabIndex = 13;
+            this.create_date.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.create_date.Value = new System.DateTime(2024, 11, 24, 0, 0, 0, 0);
             // 
             // guna2HtmlLabel6
             // 
@@ -393,6 +393,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(98, 45);
             this.guna2Button1.TabIndex = 16;
             this.guna2Button1.Text = "إضافة";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button4
             // 
@@ -521,7 +522,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox text_name;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker create_date;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_city;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;

@@ -95,9 +95,9 @@ namespace project.ChickenBatch
             dataGridView2.Columns[5].HeaderText = "  تاريخ الانشاء";
             dataGridView2.Columns[6].HeaderText = " التفاصيل";
         
-            DataTable city = await HttpRequest.HttpRequest.select_data("http://localhost/poultry2_mangemantdb2/ChickenBatch/city.php?mask=select_city");
-            DataTable prov = await HttpRequest.HttpRequest.select_data("http://localhost/poultry2_mangemantdb2/ChickenBatch/province.php?mask=select_province");
-            DataTable areas = await HttpRequest.HttpRequest.select_data("http://localhost/poultry2_mangemantdb2/ChickenBatch/areas.php?mask=select_areas");
+            DataTable city = await HttpRequest.HttpRequest.select_data(Link.link.select_city);
+            DataTable prov = await HttpRequest.HttpRequest.select_data(Link.link.select_prov);
+            DataTable areas = await HttpRequest.HttpRequest.select_data(Link.link.select_area);
            
 
             ComboBox_city.DataSource = city;
@@ -128,7 +128,20 @@ namespace project.ChickenBatch
             text_name.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
             text_datals.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
         }
-       
-                }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var values = new Dictionary<string, string> {
+                { "project_name",$"{text_name.Text}"},
+             { "city_id",$"{ComboBox_city.SelectedValue}"},
+             { "prov_id",$"{combox_prov.SelectedValue}"},
+             { "area_id",$"{combox_area.SelectedValue}"},
+             { "create_dare",$"{create_date.Value}"},
+             { "details",$"{text_datals.Text}"},
+            };
+            HttpRequest.HttpRequest.insert_data(Link.link.add_project
+                , values);
+        }
+    }
 }
            

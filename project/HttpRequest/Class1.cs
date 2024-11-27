@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -28,8 +29,8 @@ namespace project.HttpRequest
                         string responseData = await response.Content.ReadAsStringAsync();
                         // var s = JsonConvert.DeserializeObject<Dictionary<string,object>>(responseData);
                         data_table = JsonConvert.DeserializeObject<DataTable>(responseData);
-                        
-                        
+
+
                     }
                     else
                     {
@@ -44,7 +45,34 @@ namespace project.HttpRequest
             return data_table;
 
         }
+        public static async void insert_data(string url, Dictionary<string,string> valuse)
+        {
+          
+           // var jesonData = JsonConvert.SerializeObject(b);
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                  //  var body = new StringContent(jesonData, Encoding.UTF8,"application/json");
+                  var body = new FormUrlEncodedContent(valuse);
+                    HttpResponseMessage responseMessage = await client.PostAsync(url, body);
+                    if (responseMessage.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("تم الاظافo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("faild");
+                    }
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show($"{e.Message}");
+                }
+
+            }
 
 
+        }
     }
 }
