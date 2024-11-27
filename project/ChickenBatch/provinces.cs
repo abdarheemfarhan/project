@@ -27,6 +27,7 @@ namespace project.ChickenBatch
 
         {
             db.view_all(Link.link.url_select_province, dt, dataGridView2);
+            db.view_combox_city(ComboBox_city, Link.link.url_select_city);
         }
 
         private void dataGridView2_ColumnAdded(object sender, DataGridViewColumnEventArgs e)
@@ -38,7 +39,7 @@ namespace project.ChickenBatch
         {
             text_number_provinec.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
             text_name_provinces.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-            text_number_city.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+            ComboBox_city.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void dataGridView2_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
@@ -87,11 +88,11 @@ namespace project.ChickenBatch
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (text_name_provinces.Text.Trim() != "" && text_number_city.Text.Trim() != "")
+            if (text_name_provinces.Text.Trim() != "" && ComboBox_city.Text.Trim() != "")
             {
                 DataTable d = new DataTable();
                 dt = d;
-                db.Insert_province(text_name_provinces.Text, int.Parse(text_number_city.Text), Link.link.url_add_province);
+                db.Insert_province(text_name_provinces.Text, Convert.ToInt16(ComboBox_city.SelectedValue), Link.link.url_add_province);
                 dataGridView2.Refresh();
                 db.view_all(Link.link.url_select_province, dt, dataGridView2);
                 //dt = d;
@@ -102,7 +103,7 @@ namespace project.ChickenBatch
                 MessageBox.Show("ادخل الاسم ");
 
             }
-            else if (text_number_city.Text.Trim() == "")
+            else if (ComboBox_city.Text.Trim() == "")
             {
                 MessageBox.Show("ادخل رقم المدينة");
             }
@@ -112,13 +113,18 @@ namespace project.ChickenBatch
         {
             if (MessageBox.Show("هلا تريد حذف السجل=" + text_name_provinces.Text, "تاكيد", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                db.delete_province("province_id", text_number_provinec.Text, Link.link.url_delete_province);
+                db.delete_all("province_id", text_number_provinec.Text, Link.link.url_delete_province);
                 BindingContext[dt].RemoveAt(BindingContext[dt].Position);
                 /*DataTable d = new DataTable();
                 dt = d;
                 db.view_all(Link.link.url_select_province, dt, dataGridView2);
              //   dt = d;*/
             }
+
+        }
+
+        private void ComboBox_city_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -105,7 +105,7 @@ namespace project.ChickenBatch
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("هلا تريد حذف السجل="+text_name_city.Text, "تاكيد", MessageBoxButtons.OKCancel) == DialogResult.OK) { 
-                  db.delete_city(text_number_city.Text, Link.link.url_delete_city);
+                  db.delete_all("city_id", text_number_city.Text, Link.link.url_delete_city);
                BindingContext[dt].RemoveAt(BindingContext[dt].Position);
             
             }

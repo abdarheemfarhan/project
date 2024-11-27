@@ -19,6 +19,8 @@ namespace project.Link
        public const string url_select_areas = "http://localhost/poultry2_mangemantdb2/ChickenBatch/areas.php?mask=select_areas";
        public const string url_add_areas = "http://localhost/poultry2_mangemantdb2/ChickenBatch/areas.php?mask=add_areas";
        public const string url_delete_areas = "http://localhost/poultry2_mangemantdb2/ChickenBatch/areas.php?mask=delete_areas";
+       public const string url_select_com_pro = "http://localhost/poultry2_mangemantdb2/ChickenBatch/province.php?mask=select_province";
+
 
     }
 
