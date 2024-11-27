@@ -26,6 +26,7 @@ namespace project.ChickenBatch
         {
             db.view_all(Link.link.url_select_areas, dt, dataGridView2);
             db.view_combox_provinse(combox_proinces,Link.link.url_select_com_pro);
+            
 
 
         }
