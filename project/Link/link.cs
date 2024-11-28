@@ -13,6 +13,10 @@ namespace project.Link
 
 
            public const string select_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
+           public const string select_supplier = "http://localhost/poultry2_mangemantdb2/DeliveryOrder/suppliers.php?mask=select_supplier";
+           public const string select_city = "http://localhost/poultry2_mangemantdb2/ChickenBatch/city.php?mask=select_city";
+           public const string select_prov = "http://localhost/poultry2_mangemantdb2/ChickenBatch/province.php?mask=select_province";
+           public const string select_areas = "http://localhost/poultry2_mangemantdb2/ChickenBatch/areas.php?mask=select_areas";
 
 
 

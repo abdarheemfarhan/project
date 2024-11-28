@@ -32,18 +32,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_supp_email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_supp_phone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_sup_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.ComboBox_city = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combox_area = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txt_supp_phone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_supp_email = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.combox_prov = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -73,13 +73,41 @@
             this.panel1.Controls.Add(this.ComboBox_city);
             this.panel1.Controls.Add(this.guna2HtmlLabel4);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Controls.Add(this.guna2ComboBox2);
+            this.panel1.Controls.Add(this.combox_area);
             this.panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.panel1.Controls.Add(this.guna2ComboBox3);
+            this.panel1.Controls.Add(this.combox_prov);
             this.panel1.Location = new System.Drawing.Point(12, 21);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 229);
             this.panel1.TabIndex = 16;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2HtmlLabel6.AutoSize = false;
+            this.guna2HtmlLabel6.AutoSizeHeightOnly = true;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(190, 41);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 24);
+            this.guna2HtmlLabel6.TabIndex = 3;
+            this.guna2HtmlLabel6.Text = "البريد\r\n";
+            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.AutoSizeHeightOnly = true;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(489, 41);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(108, 24);
+            this.guna2HtmlLabel5.TabIndex = 3;
+            this.guna2HtmlLabel5.Text = " الهاتف رقم\r\n";
+            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -94,6 +122,54 @@
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "اسم المورد";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            // 
+            // txt_supp_email
+            // 
+            this.txt_supp_email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_supp_email.AutoSize = true;
+            this.txt_supp_email.BorderColor = System.Drawing.Color.Silver;
+            this.txt_supp_email.BorderRadius = 4;
+            this.txt_supp_email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_supp_email.DefaultText = "";
+            this.txt_supp_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_supp_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_supp_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_supp_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_supp_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_supp_email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_supp_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_supp_email.Location = new System.Drawing.Point(39, 69);
+            this.txt_supp_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_supp_email.Name = "txt_supp_email";
+            this.txt_supp_email.PasswordChar = '\0';
+            this.txt_supp_email.PlaceholderText = "";
+            this.txt_supp_email.SelectedText = "";
+            this.txt_supp_email.Size = new System.Drawing.Size(224, 36);
+            this.txt_supp_email.TabIndex = 1;
+            // 
+            // txt_supp_phone
+            // 
+            this.txt_supp_phone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_supp_phone.AutoSize = true;
+            this.txt_supp_phone.BorderColor = System.Drawing.Color.Silver;
+            this.txt_supp_phone.BorderRadius = 4;
+            this.txt_supp_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_supp_phone.DefaultText = "";
+            this.txt_supp_phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_supp_phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_supp_phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_supp_phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_supp_phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_supp_phone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_supp_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_supp_phone.Location = new System.Drawing.Point(338, 69);
+            this.txt_supp_phone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_supp_phone.Name = "txt_supp_phone";
+            this.txt_supp_phone.PasswordChar = '\0';
+            this.txt_supp_phone.PlaceholderText = "";
+            this.txt_supp_phone.SelectedText = "";
+            this.txt_supp_phone.Size = new System.Drawing.Size(224, 36);
+            this.txt_supp_phone.TabIndex = 1;
             // 
             // txt_sup_name
             // 
@@ -167,26 +243,26 @@
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "المدينة";
             // 
-            // guna2ComboBox2
+            // combox_area
             // 
-            this.guna2ComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.combox_area.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(237, 167);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(127, 36);
-            this.guna2ComboBox2.TabIndex = 5;
-            this.guna2ComboBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.combox_area.BackColor = System.Drawing.Color.Transparent;
+            this.combox_area.BorderColor = System.Drawing.Color.Silver;
+            this.combox_area.BorderRadius = 4;
+            this.combox_area.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combox_area.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combox_area.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_area.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_area.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combox_area.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combox_area.ItemHeight = 30;
+            this.combox_area.Location = new System.Drawing.Point(237, 167);
+            this.combox_area.Name = "combox_area";
+            this.combox_area.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.combox_area.Size = new System.Drawing.Size(127, 36);
+            this.combox_area.TabIndex = 5;
+            this.combox_area.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2HtmlLabel3
             // 
@@ -201,101 +277,25 @@
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "المحافظة";
             // 
-            // guna2ComboBox3
+            // combox_prov
             // 
-            this.guna2ComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox3.BorderRadius = 4;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(399, 167);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(132, 36);
-            this.guna2ComboBox3.TabIndex = 6;
-            this.guna2ComboBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txt_supp_phone
-            // 
-            this.txt_supp_phone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_supp_phone.AutoSize = true;
-            this.txt_supp_phone.BorderColor = System.Drawing.Color.Silver;
-            this.txt_supp_phone.BorderRadius = 4;
-            this.txt_supp_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_supp_phone.DefaultText = "";
-            this.txt_supp_phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_supp_phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_supp_phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_supp_phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_supp_phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_supp_phone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_supp_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_supp_phone.Location = new System.Drawing.Point(338, 69);
-            this.txt_supp_phone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_supp_phone.Name = "txt_supp_phone";
-            this.txt_supp_phone.PasswordChar = '\0';
-            this.txt_supp_phone.PlaceholderText = "";
-            this.txt_supp_phone.SelectedText = "";
-            this.txt_supp_phone.Size = new System.Drawing.Size(224, 36);
-            this.txt_supp_phone.TabIndex = 1;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(489, 41);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(108, 24);
-            this.guna2HtmlLabel5.TabIndex = 3;
-            this.guna2HtmlLabel5.Text = " الهاتف رقم\r\n";
-            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
-            // 
-            // txt_supp_email
-            // 
-            this.txt_supp_email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_supp_email.AutoSize = true;
-            this.txt_supp_email.BorderColor = System.Drawing.Color.Silver;
-            this.txt_supp_email.BorderRadius = 4;
-            this.txt_supp_email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_supp_email.DefaultText = "";
-            this.txt_supp_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_supp_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_supp_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_supp_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_supp_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_supp_email.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_supp_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_supp_email.Location = new System.Drawing.Point(39, 69);
-            this.txt_supp_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_supp_email.Name = "txt_supp_email";
-            this.txt_supp_email.PasswordChar = '\0';
-            this.txt_supp_email.PlaceholderText = "";
-            this.txt_supp_email.SelectedText = "";
-            this.txt_supp_email.Size = new System.Drawing.Size(224, 36);
-            this.txt_supp_email.TabIndex = 1;
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(190, 41);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 24);
-            this.guna2HtmlLabel6.TabIndex = 3;
-            this.guna2HtmlLabel6.Text = "البريد\r\n";
-            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
+            this.combox_prov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.combox_prov.BackColor = System.Drawing.Color.Transparent;
+            this.combox_prov.BorderColor = System.Drawing.Color.Silver;
+            this.combox_prov.BorderRadius = 4;
+            this.combox_prov.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combox_prov.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combox_prov.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_prov.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combox_prov.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combox_prov.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combox_prov.ItemHeight = 30;
+            this.combox_prov.Location = new System.Drawing.Point(399, 167);
+            this.combox_prov.Name = "combox_prov";
+            this.combox_prov.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.combox_prov.Size = new System.Drawing.Size(132, 36);
+            this.combox_prov.TabIndex = 6;
+            this.combox_prov.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -478,6 +478,7 @@
             this.dataGridView2.ThemeStyle.RowsStyle.Height = 24;
             this.dataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView2.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellEnter);
             // 
             // guna2TextBox3
             // 
@@ -531,9 +532,9 @@
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_city;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox combox_area;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox combox_prov;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox txt_supp_email;
