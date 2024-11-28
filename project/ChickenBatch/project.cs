@@ -24,8 +24,8 @@ namespace project.ChickenBatch
         {
             db.view_all(Link.link.select_project, dt, dataGridView2);
             db.view_combox_city(combox_city, Link.link.url_select_city);
-            db.view_combox_provinse(combox_provinces, Link.link.url_select_province);
-            db.view_combox_arare(combox_arera, Link.link.url_select_areas);
+          //  db.view_combox_provinse(combox_provinces, Link.link.url_select_province);
+            //db.view_combox_arare(combox_arera, Link.link.url_select_areas);
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -75,7 +75,7 @@ namespace project.ChickenBatch
 
         private async void project_Shown(object sender, EventArgs e)
         {
-            await Task.Delay(100);
+            await Task.Delay(150);
             dataGridView2.Columns[0].HeaderText = "الرقم";
             dataGridView2.Columns[1].HeaderText = "اسم المشروع";
             dataGridView2.Columns[2].HeaderText = " المدينة";
@@ -136,6 +136,20 @@ namespace project.ChickenBatch
                 db.view_all(Link.link.select_project, data, dataGridView2);
                 dataGridView2.Refresh();
             }
+
+        }
+
+        private async void combox_city_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            await Task.Delay(100);
+            db.view_combox_provinces(combox_provinces,Convert.ToInt16(combox_city.SelectedValue));
+        }
+
+        private async void combox_provinces_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            await Task.Delay(100);
+           //MessageBox.Show(" sd" + combox_provinces.SelectedValue);
+            db.view_combox_arare_id(combox_arera,Convert.ToInt16(combox_provinces.SelectedValue));
 
         }
     }

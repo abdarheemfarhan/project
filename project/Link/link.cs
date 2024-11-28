@@ -14,7 +14,6 @@ namespace project.Link
        public const string url_add_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=add_project";
         public const string url_delete_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=delete_project";
         public const string url_update_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=update_project";
-
         public const string url_select_city = "http://localhost/poultry2_mangemantdb2/ChickenBatch/city.php?mask=select_city";
        public const string url_add_city = "http://localhost/poultry2_mangemantdb2/ChickenBatch/city.php?mask=add_city";
        public const string url_delete_city = "http://localhost/poultry2_mangemantdb2/ChickenBatch/city.php?mask=delete_city";

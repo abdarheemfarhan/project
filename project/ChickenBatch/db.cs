@@ -1,10 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Net.Http;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -202,6 +204,8 @@ namespace project.ChickenBatch
         }
         public static async void view_combox_city(ComboBox combox_city, string link)
         {
+            combox_city.DataSource = null;
+
             try
             {
                 var client = new HttpClient();
@@ -209,7 +213,9 @@ namespace project.ChickenBatch
                     // استدعاء API الخاص بـ PHP
                     var response = await client.GetStringAsync(link);
                     // تحليل البيانات من JSON
-                    var items = JsonConvert.DeserializeObject<List<com_city>>(response);
+                    var items = JsonConvert.DeserializeObject<BindingList<com_city>>(response);
+            combox_city.DataSource = null;
+
                     combox_city.DataSource = items;
                     combox_city.DisplayMember = "city_name"; // عرض الاسم
                     combox_city.ValueMember = "city_id";    // تخزين الرقم
@@ -217,6 +223,8 @@ namespace project.ChickenBatch
             }
             catch (Exception ex)
             {
+                combox_city.DataSource = null;
+
                 MessageBox.Show($"Error: {ex.Message}");
 
             }
@@ -242,8 +250,77 @@ namespace project.ChickenBatch
                 MessageBox.Show($"Error: {ex.Message}");
 
             }
+        } 
+        public static async void view_combox_provinces(ComboBox comboBox,int city_id) {
+            var client = new HttpClient();
+            {
+                string link = $"http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=view_combox_provinces&city_id={city_id}";
+                try
+                {
+                    // استدعاء ملف PHP والحصول على النتائج
+                    var response = await client.GetStringAsync(link);
+                    var governates = JsonConvert.DeserializeObject<BindingList<Item>>(response);
+                    // MessageBox.Show("" + governates);
+                    var d = governates;
+
+                    // تعبئة ComboBox بالمحافظات
+                    //comboBox.Items.Clear();
+                    /*foreach (var governate in governates)
+                    {
+                        comboBox.Items.Add(new { governate.province_id, governate.province_name });
+                    }*/
+                   // comboBox.DataSource = null;
+                     comboBox.DataSource = governates;
+                    //comboBox.DataSource = d;
+                    comboBox.DisplayMember = "province_name";
+                    comboBox.ValueMember = "province_id";
+                }
+                catch (Exception ex)
+                {
+                    //comboBox.DataSource = null;
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+               // comboBox.DataSource = null;
+
+            }
+
         }
+
+        public static async void view_combox_arare_id(ComboBox comboBox, int province_id)
+        {
+            var client = new HttpClient();
+            {
+                string link = $"http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=view_combox_arare&province_id={province_id}";
+                try
+                {
+                    // استدعاء ملف PHP والحصول على النتائج
+                    var response = await client.GetStringAsync(link);
+                    var governates = JsonConvert.DeserializeObject<List<com_arera>>(response);
+
+                    // MessageBox.Show("" + governates);
+                    // تعبئة ComboBox بالمحافظات
+                    // comboBox.Items.Clear();
+                    /* foreach (var governate in governates)
+                     {
+                         comboBox.Items.Add(new { governate.area_id, governate.area_name });
+                     }*/
+                    comboBox.DataSource = governates;
+                    comboBox.DisplayMember = "area_name";
+                    comboBox.ValueMember = "area_id";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+        }
+
+
     }
+
+
+ 
 
 
 
