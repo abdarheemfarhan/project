@@ -98,7 +98,7 @@
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(108, 24);
             this.guna2HtmlLabel7.TabIndex = 14;
-            this.guna2HtmlLabel7.Text = "المشروع أسم";
+            this.guna2HtmlLabel7.Text = "المشروع رقم";
             // 
             // text_number_project
             // 

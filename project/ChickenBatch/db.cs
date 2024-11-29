@@ -178,6 +178,73 @@ namespace project.ChickenBatch
             var responseString = await response.Content.ReadAsStringAsync();
         }
 
+        //----------------------------------------------      all job             -----------------------------------------
+
+      public static async void insert_job_chicken(string name_table, string job_chicken_name, string job_datils,string link)
+        {
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+                {name_table ,job_chicken_name},
+                {"details" ,job_datils},
+
+            };
+            var content = new FormUrlEncodedContent(values);
+            var respons = await client.PostAsync(link, content);
+            var respons_string = await respons.Content.ReadAsStringAsync();
+
+        }
+
+
+
+
+        //-----------------------------------------------------------    class_get_combox   --------------------------------------------------
+        public static async void insert_farm (string farm_name, int farm_qountiy, int project_id,string details, string link)
+        {
+
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "farm_name", farm_name },
+            { "amount_expan", farm_qountiy.ToString() },
+            { "project_id", project_id.ToString() },
+            { "details", details },
+        };
+
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+        public static async void update_farm(string farm_id , string farm_name, int farm_qountiy, int project_id, string details, string link)
+        {
+
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "farm_id", farm_id },
+            { "farm_name", farm_name },
+            { "amount_expan", farm_qountiy.ToString() },
+            { "project_id", project_id.ToString() },
+            { "details", details },
+        };
+
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+
+
+
+
+
+
+
+
+
 
         //------------------------------------------------  selelct combox all  ---------------------------------------------
         public static async void view_combox_provinse(ComboBox combox_proinces, string link)
@@ -193,6 +260,28 @@ namespace project.ChickenBatch
                     combox_proinces.DataSource = items;
                     combox_proinces.DisplayMember = "province_name"; // عرض الاسم
                     combox_proinces.ValueMember = "province_id";    // تخزين الرقم
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+
+            }
+
+        }
+        public static async void view_combox_project(ComboBox combox_proinces, string link)
+        {
+            try
+            {
+                var client = new HttpClient();
+                {
+                    // استدعاء API الخاص بـ PHP
+                    var response = await client.GetStringAsync(link);
+                    // تحليل البيانات من JSON
+                    var items = JsonConvert.DeserializeObject<List<com_project>>(response);
+                    combox_proinces.DataSource = items;
+                    combox_proinces.DisplayMember = "project_name"; // عرض الاسم
+                    combox_proinces.ValueMember = "project_id";    // تخزين الرقم
                 }
             }
             catch (Exception ex)
@@ -334,6 +423,12 @@ namespace project.ChickenBatch
     {
         public int area_id { get; set; }
         public string area_name { get; set; }
+
+    }
+    public class com_project
+    {
+        public int project_id { get; set; }
+        public string project_name { get; set; }
 
     }
 }
