@@ -402,6 +402,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(98, 45);
             this.guna2Button1.TabIndex = 16;
             this.guna2Button1.Text = "إضافة";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button4
             // 

@@ -58,5 +58,25 @@ namespace project.DeliveryOrder
             combox_area.SelectedValue = dataGridView2.CurrentRow.Cells[6].Value.ToString();
             
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            var values = new Dictionary<string, string> {
+                { "supp_name",$"{txt_sup_name.Text}"},
+             { "supp_phone",$"{txt_supp_phone.Text}"},
+             { "supp_email",$"{txt_supp_email.Text}"},
+             { "city_id",$"{ComboBox_city.SelectedValue}"},
+             { "prov_id",$"{combox_prov.SelectedValue}"},
+             { "area_id",$"{combox_area.SelectedValue}"},
+
+            };
+
+            HttpRequest.HttpRequest.insert_data(Link.link.add_supplier
+                , values);
+        }
     }
 }
