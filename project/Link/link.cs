@@ -34,7 +34,15 @@ namespace project.Link
         public const string url_add_farm = "http://localhost/poultry2_mangemantdb2/ChickenBatch/farm.php?mask=add_farm";
         public const string url_delete_farm = "http://localhost/poultry2_mangemantdb2/ChickenBatch/farm.php?mask=delete_farm";
         public const string url_update_farm = "http://localhost/poultry2_mangemantdb2/ChickenBatch/farm.php?mask=update_farm";
-
+        public const string url_select_batch_details = "http://localhost/poultry2_mangemantdb2/ChickenBatch/batch_details.php?mask=select_batch_details";
+        public const string url_add_batch_details = "http://localhost/poultry2_mangemantdb2/ChickenBatch/batch_details.php?mask=add_batch_details";
+        public const string url_delete_batch_details = "http://localhost/poultry2_mangemantdb2/ChickenBatch/batch_details.php?mask=delete_batch_details";
+        public const string url_update_batch_details = "http://localhost/poultry2_mangemantdb2/ChickenBatch/farm.php?mask=update_batch_details";
+        public const string url_select_combox_chicken_batch = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch.php?mask=select_chicken_batch";
+        public const string url_add_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=add_users";
+        public const string url_delete_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=delete_users";
+        public const string url_update_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=update_users";
+        public const string url_select_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=select_users";
     }
 
 }

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Net.Http;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
@@ -194,11 +195,7 @@ namespace project.ChickenBatch
             var respons_string = await respons.Content.ReadAsStringAsync();
 
         }
-
-
-
-
-        //-----------------------------------------------------------    class_get_combox   --------------------------------------------------
+        //-----------------------------------------------------------    all farm   --------------------------------------------------
         public static async void insert_farm (string farm_name, int farm_qountiy, int project_id,string details, string link)
         {
 
@@ -236,16 +233,49 @@ namespace project.ChickenBatch
             // طباعة نتيجة الاستجابة
             var responseString = await response.Content.ReadAsStringAsync();
         }
+        //------------------------------------------------   all batch_details   ---------------------------------------------
+        public static async void insert_batch_details(int batch, int farm, int farm_qountiy, string link)
+        {
+
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "batch_id", batch.ToString() },
+            { "farm_id", farm.ToString() },
+            { "quantity", farm_qountiy.ToString() },
+        };
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+        //------------------------------------------------   all batch_details   ---------------------------------------------
+        public static async void insert_usres(string user_name, string pass,string conf_pass, string email,string phone,int job_id,int  city_id,int prov_id,int area_id,string details, string link)
+        {
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "user_name", user_name },
+            { "password", pass },
+            { "conf_pass", conf_pass.ToString() },
+            { "email", email },
+            { "phone", phone },
+            { "job_id", job_id.ToString() },
+            { "city_id", city_id.ToString() },
+            { "prov_id", prov_id.ToString() },
+            { "area_id", area_id.ToString() },
+            { "details", details },
+
+            };
 
 
-
-
-
-
-
-
-
-
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
         //------------------------------------------------  selelct combox all  ---------------------------------------------
         public static async void view_combox_provinse(ComboBox combox_proinces, string link)
         {
@@ -293,7 +323,6 @@ namespace project.ChickenBatch
         }
         public static async void view_combox_city(ComboBox combox_city, string link)
         {
-            combox_city.DataSource = null;
 
             try
             {
@@ -303,8 +332,6 @@ namespace project.ChickenBatch
                     var response = await client.GetStringAsync(link);
                     // تحليل البيانات من JSON
                     var items = JsonConvert.DeserializeObject<BindingList<com_city>>(response);
-            combox_city.DataSource = null;
-
                     combox_city.DataSource = items;
                     combox_city.DisplayMember = "city_name"; // عرض الاسم
                     combox_city.ValueMember = "city_id";    // تخزين الرقم
@@ -312,8 +339,6 @@ namespace project.ChickenBatch
             }
             catch (Exception ex)
             {
-                combox_city.DataSource = null;
-
                 MessageBox.Show($"Error: {ex.Message}");
 
             }
@@ -339,7 +364,49 @@ namespace project.ChickenBatch
                 MessageBox.Show($"Error: {ex.Message}");
 
             }
-        } 
+        }
+        public static async void view_combox_farm(ComboBox combox_farm, string link)
+        {
+            try
+            {
+                var client = new HttpClient();
+                {
+                    // استدعاء API الخاص بـ PHP
+                    var response = await client.GetStringAsync(link);
+                    // تحليل البيانات من JSON
+                    var items = JsonConvert.DeserializeObject<List<com_farm>>(response);
+                    combox_farm.DataSource = items;
+                    combox_farm.DisplayMember = "farm_name"; // عرض الاسم
+                    combox_farm.ValueMember = "farm_id";    // تخزين الرقم
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+
+            }
+        }
+        public static async void view_combox_job(ComboBox combox_job, string link)
+        {
+            try
+            {
+                var client = new HttpClient();
+                {
+                    // استدعاء API الخاص بـ PHP
+                    var response = await client.GetStringAsync(link);
+                    // تحليل البيانات من JSON
+                    var items = JsonConvert.DeserializeObject<List<com_job>>(response);
+                    combox_job.DataSource = items;
+                    combox_job.DisplayMember = "job_name"; // عرض الاسم
+                    combox_job.ValueMember = "job_id";    // تخزين الرقم
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+
+            }
+        }
         public static async void view_combox_provinces(ComboBox comboBox,int city_id) {
             var client = new HttpClient();
             {
@@ -349,16 +416,7 @@ namespace project.ChickenBatch
                     // استدعاء ملف PHP والحصول على النتائج
                     var response = await client.GetStringAsync(link);
                     var governates = JsonConvert.DeserializeObject<BindingList<Item>>(response);
-                    // MessageBox.Show("" + governates);
                     var d = governates;
-
-                    // تعبئة ComboBox بالمحافظات
-                    //comboBox.Items.Clear();
-                    /*foreach (var governate in governates)
-                    {
-                        comboBox.Items.Add(new { governate.province_id, governate.province_name });
-                    }*/
-                   // comboBox.DataSource = null;
                      comboBox.DataSource = governates;
                     //comboBox.DataSource = d;
                     comboBox.DisplayMember = "province_name";
@@ -366,11 +424,8 @@ namespace project.ChickenBatch
                 }
                 catch (Exception ex)
                 {
-                    //comboBox.DataSource = null;
                     MessageBox.Show("Error: " + ex.Message);
                 }
-               // comboBox.DataSource = null;
-
             }
 
         }
@@ -385,14 +440,6 @@ namespace project.ChickenBatch
                     // استدعاء ملف PHP والحصول على النتائج
                     var response = await client.GetStringAsync(link);
                     var governates = JsonConvert.DeserializeObject<List<com_arera>>(response);
-
-                    // MessageBox.Show("" + governates);
-                    // تعبئة ComboBox بالمحافظات
-                    // comboBox.Items.Clear();
-                    /* foreach (var governate in governates)
-                     {
-                         comboBox.Items.Add(new { governate.area_id, governate.area_name });
-                     }*/
                     comboBox.DataSource = governates;
                     comboBox.DisplayMember = "area_name";
                     comboBox.ValueMember = "area_id";
@@ -429,6 +476,18 @@ namespace project.ChickenBatch
     {
         public int project_id { get; set; }
         public string project_name { get; set; }
+
+    }
+    public class com_farm
+    {
+        public int farm_id { get; set; }
+        public string farm_name { get; set; }
+
+    }
+    public class com_job
+    {
+        public int job_id { get; set; }
+        public string job_name { get; set; }
 
     }
 }
