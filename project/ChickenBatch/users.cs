@@ -39,13 +39,13 @@ namespace project.ChickenBatch
 
         private async void combox_provinces_users_SelectedIndexChanged(object sender, EventArgs e)
         {
+                await Task.Delay(50);
+                db.view_combox_arare_id(combox_arera_users, Convert.ToInt16(combox_provinces_users.SelectedValue));
         }
 
         private async void combox_provinces_users_Click(object sender, EventArgs e)
         {
-            await Task.Delay(50);
-            db.view_combox_arare_id(combox_arera_users, Convert.ToInt16(combox_provinces_users.SelectedValue));
-
+            
         }
         private async void users_Shown(object sender, EventArgs e)
         {
@@ -141,6 +141,11 @@ namespace project.ChickenBatch
 
 
 
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
 
         }
     }

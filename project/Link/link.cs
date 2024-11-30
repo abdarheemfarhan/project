@@ -43,6 +43,11 @@ namespace project.Link
         public const string url_delete_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=delete_users";
         public const string url_update_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=update_users";
         public const string url_select_users = "http://localhost/poultry2_mangemantdb2/ChickenBatch/users.php?mask=select_users";
+        public const string url_select_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=select_chicken_batch_tab";
+        public const string url_delete_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=delete_chicken_batch_tab";
+        public const string url_update_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=chicken_batch_tab";
+        public const string url_add_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=add_chicken_batch_tab";
+
     }
 
 }

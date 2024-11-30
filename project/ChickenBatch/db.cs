@@ -276,6 +276,27 @@ namespace project.ChickenBatch
             // طباعة نتيجة الاستجابة
             var responseString = await response.Content.ReadAsStringAsync();
         }
+
+        public static async void insert_chicken_batch_tab(int chicken_type, int project, int user,string date_in,int unknow,string details,string link)
+        {
+
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "chicken_type",chicken_type.ToString() },
+            { "project_id",project.ToString() },
+            { "user_id", user.ToString() },
+            { "date_in", date_in },
+            { "unknow", unknow.ToString() },
+            { "details", details},
+
+        };
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
         //------------------------------------------------  selelct combox all  ---------------------------------------------
         public static async void view_combox_provinse(ComboBox combox_proinces, string link)
         {
@@ -378,6 +399,48 @@ namespace project.ChickenBatch
                     combox_farm.DataSource = items;
                     combox_farm.DisplayMember = "farm_name"; // عرض الاسم
                     combox_farm.ValueMember = "farm_id";    // تخزين الرقم
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+
+            }
+        }
+        public static async void view_combox_user(ComboBox combox_farm, string link)
+        {
+            try
+            {
+                var client = new HttpClient();
+                {
+                    // استدعاء API الخاص بـ PHP
+                    var response = await client.GetStringAsync(link);
+                    // تحليل البيانات من JSON
+                    var items = JsonConvert.DeserializeObject<List<com_user>>(response);
+                    combox_farm.DataSource = items;
+                    combox_farm.DisplayMember = "user_name"; // عرض الاسم
+                    combox_farm.ValueMember = "user_id";    // تخزين الرقم
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+
+            }
+        }
+        public static async void view_combox_chicken(ComboBox combox_farm, string link)
+        {
+            try
+            {
+                var client = new HttpClient();
+                {
+                    // استدعاء API الخاص بـ PHP
+                    var response = await client.GetStringAsync(link);
+                    // تحليل البيانات من JSON
+                    var items = JsonConvert.DeserializeObject<List<com_chicken>>(response);
+                    combox_farm.DataSource = items;
+                    combox_farm.DisplayMember = "chicken_type"; // عرض الاسم
+                    combox_farm.ValueMember = "chicken_id";    // تخزين الرقم
                 }
             }
             catch (Exception ex)
@@ -490,5 +553,17 @@ namespace project.ChickenBatch
         public string job_name { get; set; }
 
     }
+    public class com_user
+    {
+       public int user_id { get; set; }
+       public string user_name { get; set; }
+    }
+
+    public class com_chicken
+    {
+        public int chicken_id { get; set; }
+        public string chicken_type { get; set; }
+    }
+
 }
 

@@ -76,6 +76,12 @@
     <Compile Include="ChickenBatch\chicken.Designer.cs">
       <DependentUpon>chicken.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChickenBatch\chicken_batch_tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken_batch_tab.Designer.cs">
+      <DependentUpon>chicken_batch_tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChickenBatch\City.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\chicken.resx">
       <DependentUpon>chicken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\chicken_batch_tab.resx">
+      <DependentUpon>chicken_batch_tab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\City.ar.resx">
       <DependentUpon>City.cs</DependentUpon>

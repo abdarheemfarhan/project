@@ -78,11 +78,6 @@ namespace project.ChickenBatch
         }
         private async void guna2Button3_Click(object sender, EventArgs e)
         {
-
-            
-            //db.view_all(Link.link.url_select_province, dt, dataGridView2);
-           
-          //  dataGridView2.Rows.Add();
             BindingContext[dt].AddNew();
         }
 
