@@ -575,6 +575,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "project";
             this.Text = "project";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.project_Load);
             this.Shown += new System.EventHandler(this.project_Shown);
             this.panel1.ResumeLayout(false);

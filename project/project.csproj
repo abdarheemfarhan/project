@@ -113,6 +113,12 @@
     <Compile Include="ChickenBatch\provinces.Designer.cs">
       <DependentUpon>provinces.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChickenBatch\tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\tr.Designer.cs">
+      <DependentUpon>tr.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChickenBatch\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\provinces.resx">
       <DependentUpon>provinces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\tr.resx">
+      <DependentUpon>tr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\users.resx">
       <DependentUpon>users.cs</DependentUpon>

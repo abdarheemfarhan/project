@@ -70,10 +70,10 @@
             this.panel2.Controls.Add(this.guna2Button4);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.guna2TextBox3);
-            this.panel2.Location = new System.Drawing.Point(2, 195);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(3, 240);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(719, 361);
+            this.panel2.Size = new System.Drawing.Size(958, 444);
             this.panel2.TabIndex = 18;
             // 
             // guna2Button7
@@ -87,10 +87,10 @@
             this.guna2Button7.FillColor = System.Drawing.Color.DarkRed;
             this.guna2Button7.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(378, 263);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button7.Location = new System.Drawing.Point(504, 324);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(135, 37);
+            this.guna2Button7.Size = new System.Drawing.Size(180, 46);
             this.guna2Button7.TabIndex = 21;
             this.guna2Button7.Text = "تعديل";
             // 
@@ -105,10 +105,10 @@
             this.guna2Button3.FillColor = System.Drawing.Color.LawnGreen;
             this.guna2Button3.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(580, 263);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Location = new System.Drawing.Point(773, 324);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(135, 37);
+            this.guna2Button3.Size = new System.Drawing.Size(180, 46);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Add";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -124,10 +124,10 @@
             this.guna2Button6.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button6.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(305, 222);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button6.Location = new System.Drawing.Point(407, 273);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(79, 28);
+            this.guna2Button6.Size = new System.Drawing.Size(105, 34);
             this.guna2Button6.TabIndex = 19;
             this.guna2Button6.Text = "1";
             // 
@@ -142,10 +142,10 @@
             this.guna2Button2.FillColor = System.Drawing.Color.DarkRed;
             this.guna2Button2.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(188, 263);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Location = new System.Drawing.Point(251, 324);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(135, 37);
+            this.guna2Button2.Size = new System.Drawing.Size(180, 46);
             this.guna2Button2.TabIndex = 17;
             this.guna2Button2.Text = "حذف";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -163,10 +163,10 @@
             this.guna2Button5.FillColor = System.Drawing.Color.White;
             this.guna2Button5.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(415, 222);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button5.Location = new System.Drawing.Point(553, 273);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(92, 28);
+            this.guna2Button5.Size = new System.Drawing.Size(123, 34);
             this.guna2Button5.TabIndex = 20;
             this.guna2Button5.Text = "السابق";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -182,10 +182,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2Button1.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(641, 10);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(855, 12);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(74, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(99, 46);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "إضافة";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -203,10 +203,10 @@
             this.guna2Button4.FillColor = System.Drawing.Color.White;
             this.guna2Button4.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(192, 222);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Location = new System.Drawing.Point(256, 273);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(94, 28);
+            this.guna2Button4.Size = new System.Drawing.Size(125, 34);
             this.guna2Button4.TabIndex = 19;
             this.guna2Button4.Text = "التالي";
             // 
@@ -237,15 +237,15 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.GridColor = System.Drawing.Color.LightSteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 51);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 139);
+            this.dataGridView1.Size = new System.Drawing.Size(851, 171);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -285,13 +285,13 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(429, 10);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox3.Location = new System.Drawing.Point(572, 12);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(195, 29);
+            this.guna2TextBox3.Size = new System.Drawing.Size(260, 38);
             this.guna2TextBox3.TabIndex = 14;
             // 
             // panel1
@@ -308,10 +308,10 @@
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Controls.Add(this.guna2HtmlLabel3);
             this.panel1.Controls.Add(this.combox_farm);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(719, 186);
+            this.panel1.Size = new System.Drawing.Size(958, 228);
             this.panel1.TabIndex = 17;
             // 
             // text_batch
@@ -329,13 +329,13 @@
             this.text_batch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_batch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_batch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_batch.Location = new System.Drawing.Point(305, 58);
-            this.text_batch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.text_batch.Location = new System.Drawing.Point(407, 71);
+            this.text_batch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_batch.Name = "text_batch";
             this.text_batch.PasswordChar = '\0';
             this.text_batch.PlaceholderText = "";
             this.text_batch.SelectedText = "";
-            this.text_batch.Size = new System.Drawing.Size(128, 28);
+            this.text_batch.Size = new System.Drawing.Size(171, 34);
             this.text_batch.TabIndex = 15;
             // 
             // guna2HtmlLabel7
@@ -345,10 +345,10 @@
             this.guna2HtmlLabel7.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(615, 29);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(820, 36);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(130, 23);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(173, 28);
             this.guna2HtmlLabel7.TabIndex = 14;
             this.guna2HtmlLabel7.Text = "التفاصيل رقم";
             // 
@@ -367,13 +367,13 @@
             this.text_number_detalis.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_number_detalis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_number_detalis.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_number_detalis.Location = new System.Drawing.Point(550, 58);
-            this.text_number_detalis.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.text_number_detalis.Location = new System.Drawing.Point(733, 71);
+            this.text_number_detalis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_number_detalis.Name = "text_number_detalis";
             this.text_number_detalis.PasswordChar = '\0';
             this.text_number_detalis.PlaceholderText = "";
             this.text_number_detalis.SelectedText = "";
-            this.text_number_detalis.Size = new System.Drawing.Size(101, 28);
+            this.text_number_detalis.Size = new System.Drawing.Size(135, 34);
             this.text_number_detalis.TabIndex = 13;
             // 
             // text_qountity
@@ -391,13 +391,13 @@
             this.text_qountity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_qountity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_qountity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_qountity.Location = new System.Drawing.Point(160, 141);
-            this.text_qountity.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.text_qountity.Location = new System.Drawing.Point(213, 174);
+            this.text_qountity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_qountity.Name = "text_qountity";
             this.text_qountity.PasswordChar = '\0';
             this.text_qountity.PlaceholderText = "";
             this.text_qountity.SelectedText = "";
-            this.text_qountity.Size = new System.Drawing.Size(316, 29);
+            this.text_qountity.Size = new System.Drawing.Size(421, 36);
             this.text_qountity.TabIndex = 6;
             // 
             // guna2HtmlLabel6
@@ -407,10 +407,10 @@
             this.guna2HtmlLabel6.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(469, 116);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(625, 143);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(72, 23);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(96, 28);
             this.guna2HtmlLabel6.TabIndex = 12;
             this.guna2HtmlLabel6.Text = "الكمية";
             // 
@@ -421,10 +421,10 @@
             this.guna2HtmlLabel1.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(422, 33);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(563, 41);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(63, 23);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(84, 28);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "الدفعة";
             // 
@@ -434,10 +434,10 @@
             this.guna2HtmlLabel3.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(173, 33);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(231, 41);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(75, 23);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(100, 28);
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "المزرعة";
             // 
@@ -453,24 +453,25 @@
             this.combox_farm.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.combox_farm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combox_farm.ItemHeight = 30;
-            this.combox_farm.Location = new System.Drawing.Point(86, 58);
-            this.combox_farm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combox_farm.Location = new System.Drawing.Point(115, 71);
+            this.combox_farm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combox_farm.Name = "combox_farm";
             this.combox_farm.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.combox_farm.Size = new System.Drawing.Size(100, 36);
+            this.combox_farm.Size = new System.Drawing.Size(132, 36);
             this.combox_farm.TabIndex = 3;
             this.combox_farm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // batch_details
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(722, 557);
+            this.ClientSize = new System.Drawing.Size(963, 686);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "batch_details";
             this.Text = "batch_details";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.batch_details_Load);
             this.Shown += new System.EventHandler(this.batch_details_Shown);
             this.panel2.ResumeLayout(false);

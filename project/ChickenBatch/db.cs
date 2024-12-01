@@ -251,17 +251,43 @@ namespace project.ChickenBatch
             var responseString = await response.Content.ReadAsStringAsync();
         }
         //------------------------------------------------   all batch_details   ---------------------------------------------
-        public static async void insert_usres(string user_name, string pass,string conf_pass, string email,string phone,int job_id,int  city_id,int prov_id,int area_id,string details, string link)
+        public static async void insert_usres(string user_name, int job_id, string pass,string conf_pass, string email,string phone,int  city_id,int prov_id,int area_id,string details, string link)
         {
             var client = new HttpClient();
             var values = new Dictionary<string, string>
             {
             { "user_name", user_name },
+            {"job_id",job_id.ToString() },
             { "password", pass },
             { "conf_pass", conf_pass.ToString() },
             { "email", email },
             { "phone", phone },
-            { "job_id", job_id.ToString() },
+            { "city_id", city_id.ToString() },
+            { "prov_id", prov_id.ToString() },
+            { "area_id", area_id.ToString() },
+            { "details", details },
+
+            };
+
+
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+        public static async void update_usres(string user_id,string user_name, int job_id, string pass, string conf_pass, string email, string phone, int city_id, int prov_id, int area_id, string details, string link)
+        {
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            {"user_id",user_id},
+            { "user_name", user_name },
+            {"job_id",job_id.ToString() },
+            { "password", pass },
+            { "conf_pass", conf_pass.ToString() },
+            { "email", email },
+            { "phone", phone },
             { "city_id", city_id.ToString() },
             { "prov_id", prov_id.ToString() },
             { "area_id", area_id.ToString() },

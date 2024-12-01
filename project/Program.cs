@@ -16,7 +16,7 @@ namespace project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChickenBatch.chicken_batch_tab());
+            Application.Run(new ChickenBatch.tr());
         }
     }
 }

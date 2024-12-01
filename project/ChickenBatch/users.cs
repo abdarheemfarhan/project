@@ -17,10 +17,8 @@ namespace project.ChickenBatch
         {
             InitializeComponent();
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void users_Load(object sender, EventArgs e)
@@ -42,10 +40,8 @@ namespace project.ChickenBatch
                 await Task.Delay(50);
                 db.view_combox_arare_id(combox_arera_users, Convert.ToInt16(combox_provinces_users.SelectedValue));
         }
-
         private async void combox_provinces_users_Click(object sender, EventArgs e)
         {
-            
         }
         private async void users_Shown(object sender, EventArgs e)
         {
@@ -60,7 +56,7 @@ namespace project.ChickenBatch
             dataGridView2.Columns[7].HeaderText = "المدينة";
             dataGridView2.Columns[8].HeaderText = "المحافظة";
             dataGridView2.Columns[9].HeaderText = "المنطقة";
-            dataGridView2.Columns[10].HeaderText = "المنطقة";
+            dataGridView2.Columns[10].HeaderText = "تفاصيل";
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -76,16 +72,20 @@ namespace project.ChickenBatch
                 {
                     DataTable d = new DataTable();
                     dt = d;
-                    db.insert_usres(text_name_users.Text, text_password_users.Text, text_password_users_takd.Text,
-                        text_email_users.Text, text_phone_users.Text, Convert.ToInt16(combox_job.SelectedValue),
+                    db.insert_usres(text_name_users.Text,Convert.ToInt16(combox_job.SelectedValue), text_password_users.Text, text_password_users_takd.Text,
+                        text_email_users.Text, text_phone_users.Text,
                         Convert.ToInt16(combox_city_users.SelectedValue), Convert.ToInt16(combox_provinces_users.SelectedValue),
                         Convert.ToInt16(combox_arera_users.SelectedValue), text_datals_users.Text,
                         Link.link.url_add_users);
                     dataGridView2.Refresh();
                     db.view_all(Link.link.url_select_users, dt, dataGridView2);
                 }
+                else
+                {
+                  MessageBox.Show("التاكد من كلمة المرور مع التاكيد");
+                }
 
-                MessageBox.Show("التاكد من كلمة المرور مع التاكيد");
+               
             }
             else if (text_name_users.Text.Trim() == "")
             {
@@ -135,18 +135,37 @@ namespace project.ChickenBatch
             text_email_users.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
             text_phone_users.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
             text_datals_users.Text = dataGridView2.CurrentRow.Cells[10].Value.ToString();
-
-
-
-
-
-
-
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("" + combox_provinces_users.SelectedValue);
+        }
 
+        private void combox_job_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("هلا تريد تعديل السجل=" + text_name_users.Text, "تاكيد", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                if (text_password_users.Text.Trim() == text_password_users_takd.Text.Trim())
+                {
+                    DataTable d = new DataTable();
+                    dt = d;
+                    db.update_usres(text_number_users.Text, text_name_users.Text, Convert.ToInt16(combox_job.SelectedValue), text_password_users.Text, text_password_users_takd.Text,
+                        text_email_users.Text, text_phone_users.Text,
+                        Convert.ToInt16(combox_city_users.SelectedValue), Convert.ToInt16(combox_provinces_users.SelectedValue),
+                        Convert.ToInt16(combox_arera_users.SelectedValue), text_datals_users.Text,
+                        Link.link.url_update_users);
+                    dataGridView2.Refresh();
+                    db.view_all(Link.link.url_select_users, dt, dataGridView2);
+                }
+                else
+                {
+                    MessageBox.Show("التاكد من كلمة المرور مع التاكيد");
+                }
+            }
         }
     }
 }
