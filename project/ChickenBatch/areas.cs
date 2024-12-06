@@ -116,6 +116,16 @@ namespace project.ChickenBatch
         {
 
         }
+
+        private void guna2Button7_Click_1(object sender, EventArgs e)
+        {
+            BindingContext[dt].CancelCurrentEdit();
+        }
+
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 public class Item

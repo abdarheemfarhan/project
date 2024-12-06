@@ -83,5 +83,10 @@ namespace project.ChickenBatch
         {
 
         }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].CancelCurrentEdit();
+        }
     }
 }

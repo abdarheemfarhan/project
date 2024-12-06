@@ -121,6 +121,13 @@ namespace project.ChickenBatch
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
+            ChickenBatch.chicken batch = new chicken();
+            batch.TopLevel = false;
+            batch.FormBorderStyle = FormBorderStyle.None;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(batch);
+            batch.Show();
+            batch.WindowState = FormWindowState.Maximized;
 
         }
     }

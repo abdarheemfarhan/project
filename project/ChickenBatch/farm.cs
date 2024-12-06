@@ -113,5 +113,16 @@ namespace project.ChickenBatch
         {
 
         }
+
+        private void text_search_MouseHover(object sender, EventArgs e)
+        {
+            text_search.Clear();
+        }
+
+        private void text_search_TextChanged(object sender, EventArgs e)
+        {
+            string search_name = $"farm_name LIKE '%{text_search.Text}%'";
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = search_name;
+        }
     }
 }

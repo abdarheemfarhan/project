@@ -22,7 +22,7 @@ namespace project.ChickenBatch
         {
             DataTable s = new DataTable();
             s = ds;
-            using (HttpClient client = new HttpClient())
+            var client = new HttpClient();
             {
                 try
                 {
@@ -46,6 +46,7 @@ namespace project.ChickenBatch
                             s.Rows.Add(ro);
                             dataGridView.DataSource = s;
                             dataGridView.Refresh();
+
                         }
                     }
                     else
@@ -268,8 +269,6 @@ namespace project.ChickenBatch
             { "details", details },
 
             };
-
-
             var content = new FormUrlEncodedContent(values);
             // إرسال البيانات إلى سكربت PHP
             var response = await client.PostAsync(link, content);
@@ -302,13 +301,33 @@ namespace project.ChickenBatch
             // طباعة نتيجة الاستجابة
             var responseString = await response.Content.ReadAsStringAsync();
         }
-
         public static async void insert_chicken_batch_tab(int chicken_type, int project, int user,string date_in,int unknow,string details,string link)
         {
 
             var client = new HttpClient();
             var values = new Dictionary<string, string>
             {
+            { "chicken_type",chicken_type.ToString() },
+            { "project_id",project.ToString() },
+            { "user_id", user.ToString() },
+            { "date_in", date_in },
+            { "unknow", unknow.ToString() },
+            { "details", details},
+
+        };
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+        public static async void update_chicken_batch_tab(string batch_id, int chicken_type, int project, int user, string date_in, int unknow, string details, string link)
+        {
+
+            var client = new HttpClient();
+            var values = new Dictionary<string, string>
+            {
+            { "batch_id",batch_id },
             { "chicken_type",chicken_type.ToString() },
             { "project_id",project.ToString() },
             { "user_id", user.ToString() },

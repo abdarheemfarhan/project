@@ -129,5 +129,25 @@ namespace project.ChickenBatch
         {
           BindingContext[dt].Position-=1;
         }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("هلا تريد تعديل السجل=" + text_number_batch_id.Text, "تاكيد", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+
+                DataTable d = new DataTable();
+                dt = d;
+                db.update_chicken_batch_tab(text_number_batch_id.Text,Convert.ToInt16(combox_chicken_type.SelectedValue), Convert.ToInt16(combox_project.SelectedValue), Convert.ToInt16(combox_users.SelectedValue),
+                    data_batch.Text, int.Parse(text_f.Text), text_datals_batch.Text, Link.link.url_update_chicken_batch_tab);
+                dataGridView2.Refresh();
+                db.view_all(Link.link.url_select_chicken_batch_tab, dt, dataGridView2);
+                dataGridView2.Refresh();
+            }
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].CancelCurrentEdit();
+        }
     }
 }

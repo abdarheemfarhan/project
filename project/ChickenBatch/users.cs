@@ -167,5 +167,39 @@ namespace project.ChickenBatch
                 }
             }
         }
+
+        private async void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            string search_name = $"user_name LIKE '%{text_search.Text}%'";
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = search_name;
+        }
+        private void text_search_MouseHover(object sender, EventArgs e)
+        {
+            text_search.Clear();
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+        //text_search.Text = "f";
+
+
     }
+    
 }

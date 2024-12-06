@@ -84,5 +84,11 @@ namespace project.ChickenBatch
         {
 
         }
+
+        private void text_search_TextChanged(object sender, EventArgs e)
+        {
+            string search_name = $"chicken_type LIKE '%{text_search.Text}%'";
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = search_name;
+        }
     }
 }

@@ -152,5 +152,11 @@ namespace project.ChickenBatch
             db.view_combox_arare_id(combox_arera,Convert.ToInt16(combox_provinces.SelectedValue));
 
         }
+
+        private void text_search_TextChanged(object sender, EventArgs e)
+        {
+            string search_name = $"project_name LIKE '%{text_search.Text}%'";
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = search_name;
+        }
     }
 }
