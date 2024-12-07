@@ -122,5 +122,48 @@ namespace project.ChickenBatch
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].CancelCurrentEdit();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position += 1;
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position -= 1;
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position = 0;
+
+        }
     }
 }

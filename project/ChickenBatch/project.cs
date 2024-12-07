@@ -158,5 +158,16 @@ namespace project.ChickenBatch
             string search_name = $"project_name LIKE '%{text_search.Text}%'";
             (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = search_name;
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position -= 1;
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].CancelCurrentEdit();
+
+        }
     }
 }

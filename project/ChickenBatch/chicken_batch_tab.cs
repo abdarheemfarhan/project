@@ -149,5 +149,16 @@ namespace project.ChickenBatch
         {
             BindingContext[dt].CancelCurrentEdit();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position = 0;
+
+        }
     }
 }

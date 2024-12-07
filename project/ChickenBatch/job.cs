@@ -89,5 +89,20 @@ namespace project.ChickenBatch
         {
             BindingContext[dt].CancelCurrentEdit();
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position -= 1;
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position += 1;
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position = 0;
+        }
     }
 }

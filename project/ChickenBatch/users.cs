@@ -139,7 +139,8 @@ namespace project.ChickenBatch
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("" + combox_provinces_users.SelectedValue);
+            BindingContext[dt].Position -= 1;
+
         }
 
         private void combox_job_SelectedIndexChanged(object sender, EventArgs e)
@@ -190,10 +191,17 @@ namespace project.ChickenBatch
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
+            BindingContext[dt].Position = 1;
 
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            BindingContext[dt].Position += 1;
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

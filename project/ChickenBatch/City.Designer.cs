@@ -33,116 +33,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.text_name_city = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.text_number_city = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.text_number_city = new Guna.UI2.WinForms.Guna2TextBox();
+            this.text_name_city = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.guna2Button7);
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.text_name_city);
-            this.panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.panel1.Controls.Add(this.text_number_city);
-            this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // text_name_city
-            // 
-            resources.ApplyResources(this.text_name_city, "text_name_city");
-            this.text_name_city.BorderColor = System.Drawing.Color.Silver;
-            this.text_name_city.BorderRadius = 4;
-            this.text_name_city.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.text_name_city.DefaultText = "";
-            this.text_name_city.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.text_name_city.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.text_name_city.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.text_name_city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.text_name_city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_name_city.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_name_city.Name = "text_name_city";
-            this.text_name_city.PasswordChar = '\0';
-            this.text_name_city.PlaceholderText = "";
-            this.text_name_city.SelectedText = "";
-            // 
-            // guna2HtmlLabel2
-            // 
-            resources.ApplyResources(this.guna2HtmlLabel2, "guna2HtmlLabel2");
-            this.guna2HtmlLabel2.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            // 
-            // text_number_city
-            // 
-            resources.ApplyResources(this.text_number_city, "text_number_city");
-            this.text_number_city.BorderColor = System.Drawing.Color.Silver;
-            this.text_number_city.BorderRadius = 4;
-            this.text_number_city.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.text_number_city.DefaultText = "";
-            this.text_number_city.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.text_number_city.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.text_number_city.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.text_number_city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.text_number_city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_number_city.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_number_city.Name = "text_number_city";
-            this.text_number_city.PasswordChar = '\0';
-            this.text_number_city.PlaceholderText = "";
-            this.text_number_city.SelectedText = "";
-            // 
-            // guna2HtmlLabel1
-            // 
-            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.guna2Button6);
-            this.panel2.Controls.Add(this.guna2Button5);
-            this.panel2.Controls.Add(this.guna2Button4);
-            this.panel2.Controls.Add(this.dataGridView2);
-            this.panel2.Controls.Add(this.guna2TextBox3);
-            this.panel2.Name = "panel2";
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // guna2Button3
-            // 
-            resources.ApplyResources(this.guna2Button3, "guna2Button3");
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button6
             // 
@@ -156,19 +65,6 @@
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
-            // 
-            // guna2Button2
-            // 
-            resources.ApplyResources(this.guna2Button2, "guna2Button2");
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button5
             // 
@@ -184,19 +80,6 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
-            // 
-            // guna2Button1
-            // 
-            resources.ApplyResources(this.guna2Button1, "guna2Button1");
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button4
             // 
@@ -283,6 +166,98 @@
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
+            // guna2Panel2
+            // 
+            resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderRadius = 15;
+            this.guna2Panel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.guna2Button7);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel2.Controls.Add(this.guna2Button3);
+            this.guna2Panel2.Controls.Add(this.guna2Button1);
+            this.guna2Panel2.Controls.Add(this.guna2Button2);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Controls.Add(this.text_name_city);
+            this.guna2Panel2.Controls.Add(this.text_number_city);
+            this.guna2Panel2.Name = "guna2Panel2";
+            // 
+            // text_number_city
+            // 
+            resources.ApplyResources(this.text_number_city, "text_number_city");
+            this.text_number_city.BorderColor = System.Drawing.Color.Silver;
+            this.text_number_city.BorderRadius = 4;
+            this.text_number_city.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.text_number_city.DefaultText = "";
+            this.text_number_city.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.text_number_city.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.text_number_city.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.text_number_city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.text_number_city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.text_number_city.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.text_number_city.Name = "text_number_city";
+            this.text_number_city.PasswordChar = '\0';
+            this.text_number_city.PlaceholderText = "";
+            this.text_number_city.SelectedText = "";
+            // 
+            // text_name_city
+            // 
+            resources.ApplyResources(this.text_name_city, "text_name_city");
+            this.text_name_city.BorderColor = System.Drawing.Color.Silver;
+            this.text_name_city.BorderRadius = 4;
+            this.text_name_city.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.text_name_city.DefaultText = "";
+            this.text_name_city.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.text_name_city.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.text_name_city.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.text_name_city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.text_name_city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.text_name_city.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.text_name_city.Name = "text_name_city";
+            this.text_name_city.PasswordChar = '\0';
+            this.text_name_city.PlaceholderText = "";
+            this.text_name_city.SelectedText = "";
+            // 
+            // guna2Button2
+            // 
+            resources.ApplyResources(this.guna2Button2, "guna2Button2");
+            this.guna2Button2.BorderRadius = 20;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkRed;
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // guna2Button1
+            // 
+            resources.ApplyResources(this.guna2Button1, "guna2Button1");
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Button3
+            // 
+            resources.ApplyResources(this.guna2Button3, "guna2Button3");
+            this.guna2Button3.BorderRadius = 20;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // guna2Button7
             // 
             resources.ApplyResources(this.guna2Button7, "guna2Button7");
@@ -295,19 +270,46 @@
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Name = "guna2Button7";
             // 
+            // guna2HtmlLabel1
+            // 
+            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            // 
+            // guna2HtmlLabel2
+            // 
+            resources.ApplyResources(this.guna2HtmlLabel2, "guna2HtmlLabel2");
+            this.guna2HtmlLabel2.AutoSizeHeightOnly = true;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            // 
+            // guna2Panel1
+            // 
+            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel1.BorderRadius = 15;
+            this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.guna2Button6);
+            this.guna2Panel1.Controls.Add(this.dataGridView2);
+            this.guna2Panel1.Controls.Add(this.guna2TextBox3);
+            this.guna2Panel1.Controls.Add(this.guna2Button5);
+            this.guna2Panel1.Controls.Add(this.guna2Button4);
+            this.guna2Panel1.Name = "guna2Panel1";
+            // 
             // City
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.guna2Panel2);
             this.Name = "City";
             this.Load += new System.EventHandler(this.City_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -315,20 +317,20 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox text_name_city;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox text_number_city;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         public Guna.UI2.WinForms.Guna2DataGridView dataGridView2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox text_name_city;
+        private Guna.UI2.WinForms.Guna2TextBox text_number_city;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
