@@ -9,16 +9,10 @@ namespace project.Link
     
    public static  class link
     {
-<<<<<<< HEAD
       
 
 
-           public const string select_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
-
-
-
-
-=======
+     //      public const string select_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
         
        public const string select_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
        public const string url_add_project = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=add_project";
@@ -57,7 +51,6 @@ namespace project.Link
         public const string url_delete_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=delete_chicken_batch_tab";
         public const string url_update_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=update_chicken_batch_tab";
         public const string url_add_chicken_batch_tab = "http://localhost/poultry2_mangemantdb2/ChickenBatch/chicken_batch_tab.php?mask=add_chicken_batch_tab";
->>>>>>> abdarheem
 
     }
 
