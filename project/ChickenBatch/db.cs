@@ -559,6 +559,7 @@ namespace project.ChickenBatch
             }
 
         }
+<<<<<<< HEAD
         public static void name_dataGrad_header(DataGridViewColumnCollection colums, string[] colum_name)
         {
             for (int i = 0; i < colums.Count; i++)
@@ -566,6 +567,8 @@ namespace project.ChickenBatch
                 colums[i].HeaderText = colum_name[i];
             }
         }
+=======
+>>>>>>> abdarheem
 
 
     }

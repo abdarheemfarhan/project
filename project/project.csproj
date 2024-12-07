@@ -58,11 +58,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChickenBatch\areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\areas.Designer.cs">
+      <DependentUpon>areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\batch_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\batch_details.Designer.cs">
+      <DependentUpon>batch_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken.Designer.cs">
+      <DependentUpon>chicken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken_batch_tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken_batch_tab.Designer.cs">
+      <DependentUpon>chicken_batch_tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\City.Designer.cs">
+      <DependentUpon>City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\db.cs" />
+    <Compile Include="ChickenBatch\farm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\farm.Designer.cs">
+      <DependentUpon>farm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\job.Designer.cs">
+      <DependentUpon>job.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChickenBatch\project.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChickenBatch\project.Designer.cs">
       <DependentUpon>project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\provinces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\provinces.Designer.cs">
+      <DependentUpon>provinces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\tr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\tr.Designer.cs">
+      <DependentUpon>tr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
     </Compile>
     <Compile Include="f.cs" />
     <Compile Include="Form1.cs">
@@ -74,8 +141,41 @@
     <Compile Include="Link\link.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChickenBatch\areas.resx">
+      <DependentUpon>areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\batch_details.resx">
+      <DependentUpon>batch_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\chicken.resx">
+      <DependentUpon>chicken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\chicken_batch_tab.resx">
+      <DependentUpon>chicken_batch_tab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\City.ar.resx">
+      <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\City.resx">
+      <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\farm.resx">
+      <DependentUpon>farm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\job.resx">
+      <DependentUpon>job.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\project.resx">
       <DependentUpon>project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\provinces.resx">
+      <DependentUpon>provinces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\tr.resx">
+      <DependentUpon>tr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\users.resx">
+      <DependentUpon>users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.aa.resx">
       <DependentUpon>Form1.cs</DependentUpon>

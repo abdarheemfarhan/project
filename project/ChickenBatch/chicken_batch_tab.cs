@@ -27,6 +27,10 @@ namespace project.ChickenBatch
         {
             db.view_combox_user(combox_users, Link.link.url_select_users);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> abdarheem
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
