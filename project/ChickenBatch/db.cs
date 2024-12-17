@@ -11,6 +11,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace project.ChickenBatch
 {
@@ -321,6 +322,17 @@ namespace project.ChickenBatch
             // طباعة نتيجة الاستجابة
             var responseString = await response.Content.ReadAsStringAsync();
         }
+        public static async void insert_all(Dictionary<string,string> values, string link)
+        {
+
+            var client = new HttpClient();
+           
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
         public static async void update_chicken_batch_tab(string batch_id, int chicken_type, int project, int user, string date_in, int unknow, string details, string link)
         {
 
@@ -514,6 +526,85 @@ namespace project.ChickenBatch
                 MessageBox.Show($"Error: {ex.Message}");
 
             }
+        }
+        static public async Task<DataTable> select_data(string url)
+        {
+            DataTable data_table = new DataTable();
+            // string url = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    // إرسال طلب GET
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    // إذا كانت الاستجابة ناجحة
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseData = await response.Content.ReadAsStringAsync();
+                        // var s = JsonConvert.DeserializeObject<Dictionary<string,object>>(responseData);
+                        data_table = JsonConvert.DeserializeObject<DataTable>(responseData);
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            return data_table;
+
+        }
+        static public async Task<int> select_data_id(string url,string n)
+        {
+            DataTable data_table = new DataTable();
+            // string url = "http://localhost/poultry2_mangemantdb2/ChickenBatch/projects.php?mask=select_project";
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    // إرسال طلب GET
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    response.EnsureSuccessStatusCode();
+                    // إذا كانت الاستجابة ناجحة
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseData = await response.Content.ReadAsStringAsync();
+                        //  var s = JsonConvert.DeserializeObject<Dictionary<string,object>>(responseData);
+                         var s = JsonConvert.DeserializeObject<dynamic>(responseData);
+                       // int d = int.Parse(s);
+                        //MessageBox.Show("" + s["max(batch_id)"]);
+                        return s["max("+n+")+1"];
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            return 0;
+
+        }
+
+        public static void Fill_comobox(DataTable dataTable, ComboBox comboBox)
+        {
+            comboBox.DataSource = dataTable;
+            comboBox.DisplayMember = dataTable.Columns[1].ColumnName;
+            comboBox.ValueMember = dataTable.Columns[0].ColumnName;
+        }
+        public static void Fill_data_comobox(DataTable dataTable, DataGridViewComboBoxColumn comboBox)
+        {
+            comboBox.DataSource = dataTable;
+            comboBox.DisplayMember = dataTable.Columns[0].ColumnName;
+            comboBox.ValueMember = dataTable.Columns[0].ColumnName;
         }
         public static async void view_combox_provinces(ComboBox comboBox,int city_id) {
             var client = new HttpClient();

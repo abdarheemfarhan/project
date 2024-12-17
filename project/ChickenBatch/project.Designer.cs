@@ -491,7 +491,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.GridColor = System.Drawing.Color.LightSteelBlue;
-            this.dataGridView2.Location = new System.Drawing.Point(9, 52);
+            this.dataGridView2.Location = new System.Drawing.Point(16, 52);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -595,7 +595,7 @@
             this.guna2Panel2.Controls.Add(this.guna2Button6);
             this.guna2Panel2.Controls.Add(this.guna2Button5);
             this.guna2Panel2.Controls.Add(this.guna2Button4);
-            this.guna2Panel2.Location = new System.Drawing.Point(12, 315);
+            this.guna2Panel2.Location = new System.Drawing.Point(12, 314);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1004, 376);
             this.guna2Panel2.TabIndex = 18;

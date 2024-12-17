@@ -88,6 +88,18 @@
     <Compile Include="ChickenBatch\City.Designer.cs">
       <DependentUpon>City.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChickenBatch\customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\daf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\daf.Designer.cs">
+      <DependentUpon>daf.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChickenBatch\db.cs" />
     <Compile Include="ChickenBatch\farm.cs">
       <SubType>Form</SubType>
@@ -158,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\City.resx">
       <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\daf.resx">
+      <DependentUpon>daf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\farm.resx">
       <DependentUpon>farm.cs</DependentUpon>

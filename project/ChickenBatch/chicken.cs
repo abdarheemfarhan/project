@@ -103,5 +103,10 @@ namespace project.ChickenBatch
             BindingContext[dt].Position = 1;
 
         }
+
+        private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

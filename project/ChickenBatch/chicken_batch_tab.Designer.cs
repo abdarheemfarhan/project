@@ -75,7 +75,7 @@
             this.guna2Button8.FillColor = System.Drawing.Color.DarkRed;
             this.guna2Button8.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Location = new System.Drawing.Point(23, 201);
+            this.guna2Button8.Location = new System.Drawing.Point(75, 201);
             this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(108, 46);
@@ -94,7 +94,7 @@
             this.guna2Button7.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button7.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(726, 201);
+            this.guna2Button7.Location = new System.Drawing.Point(778, 201);
             this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(135, 46);
@@ -109,7 +109,7 @@
             this.data_batch.FillColor = System.Drawing.Color.White;
             this.data_batch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.data_batch.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.data_batch.Location = new System.Drawing.Point(676, 147);
+            this.data_batch.Location = new System.Drawing.Point(728, 147);
             this.data_batch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.data_batch.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.data_batch.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -130,7 +130,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button3.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(867, 201);
+            this.guna2Button3.Location = new System.Drawing.Point(919, 201);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(135, 46);
@@ -149,7 +149,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.DarkRed;
             this.guna2Button2.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(569, 201);
+            this.guna2Button2.Location = new System.Drawing.Point(621, 201);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(135, 46);
@@ -178,7 +178,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(7, 9);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(995, 89);
+            this.guna2Panel1.Size = new System.Drawing.Size(1047, 89);
             this.guna2Panel1.TabIndex = 25;
             // 
             // combox_chicken_type
@@ -197,7 +197,7 @@
             this.combox_chicken_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combox_chicken_type.IntegralHeight = false;
             this.combox_chicken_type.ItemHeight = 30;
-            this.combox_chicken_type.Location = new System.Drawing.Point(524, 41);
+            this.combox_chicken_type.Location = new System.Drawing.Point(550, 41);
             this.combox_chicken_type.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combox_chicken_type.Name = "combox_chicken_type";
             this.combox_chicken_type.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -215,7 +215,7 @@
             this.guna2HtmlLabel7.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(871, 11);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(923, 11);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
@@ -230,7 +230,7 @@
             this.guna2HtmlLabel2.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(632, 11);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(658, 11);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
@@ -252,7 +252,7 @@
             this.text_number_batch_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_number_batch_id.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_number_batch_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_number_batch_id.Location = new System.Drawing.Point(785, 42);
+            this.text_number_batch_id.Location = new System.Drawing.Point(837, 42);
             this.text_number_batch_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_number_batch_id.Name = "text_number_batch_id";
             this.text_number_batch_id.PasswordChar = '\0';
@@ -346,7 +346,7 @@
             this.guna2HtmlLabel11.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(850, 115);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(902, 115);
             this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(125, 28);
@@ -364,7 +364,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button1.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(139, 201);
+            this.guna2Button1.Location = new System.Drawing.Point(191, 201);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(99, 46);
@@ -387,7 +387,7 @@
             this.text_f.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_f.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_f.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_f.Location = new System.Drawing.Point(407, 145);
+            this.text_f.Location = new System.Drawing.Point(459, 145);
             this.text_f.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_f.Name = "text_f";
             this.text_f.PasswordChar = '\0';
@@ -403,7 +403,7 @@
             this.guna2HtmlLabel5.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(595, 115);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(647, 115);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(96, 28);
@@ -426,7 +426,7 @@
             this.text_datals_batch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.text_datals_batch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.text_datals_batch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.text_datals_batch.Location = new System.Drawing.Point(127, 145);
+            this.text_datals_batch.Location = new System.Drawing.Point(179, 145);
             this.text_datals_batch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_datals_batch.Name = "text_datals_batch";
             this.text_datals_batch.PasswordChar = '\0';
@@ -442,7 +442,7 @@
             this.guna2HtmlLabel6.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("ae_AlArabiya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(344, 115);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(396, 115);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(96, 28);
@@ -460,7 +460,7 @@
             this.guna2Button6.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button6.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(430, 265);
+            this.guna2Button6.Location = new System.Drawing.Point(456, 301);
             this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(105, 34);
@@ -481,7 +481,7 @@
             this.guna2Button5.FillColor = System.Drawing.Color.White;
             this.guna2Button5.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(588, 265);
+            this.guna2Button5.Location = new System.Drawing.Point(614, 301);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(123, 34);
@@ -502,7 +502,7 @@
             this.guna2Button4.FillColor = System.Drawing.Color.White;
             this.guna2Button4.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(244, 265);
+            this.guna2Button4.Location = new System.Drawing.Point(270, 301);
             this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(125, 34);
@@ -545,7 +545,7 @@
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(930, 192);
+            this.dataGridView2.Size = new System.Drawing.Size(982, 228);
             this.dataGridView2.TabIndex = 16;
             this.dataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -586,7 +586,7 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(726, 13);
+            this.guna2TextBox3.Location = new System.Drawing.Point(778, 13);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -616,7 +616,7 @@
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Location = new System.Drawing.Point(5, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1011, 264);
+            this.guna2Panel2.Size = new System.Drawing.Size(1063, 264);
             this.guna2Panel2.TabIndex = 20;
             // 
             // guna2Panel3
@@ -635,14 +635,14 @@
             this.guna2Panel3.Controls.Add(this.guna2Button5);
             this.guna2Panel3.Location = new System.Drawing.Point(5, 273);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1008, 313);
+            this.guna2Panel3.Size = new System.Drawing.Size(1060, 349);
             this.guna2Panel3.TabIndex = 21;
             // 
             // chicken_batch_tab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 589);
+            this.ClientSize = new System.Drawing.Size(1071, 625);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
