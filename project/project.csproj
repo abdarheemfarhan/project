@@ -94,6 +94,12 @@
     <Compile Include="ChickenBatch\customer.Designer.cs">
       <DependentUpon>customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChickenBatch\customer_acoountcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChickenBatch\customer_acoountcs.Designer.cs">
+      <DependentUpon>customer_acoountcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChickenBatch\daf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\customer.resx">
       <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChickenBatch\customer_acoountcs.resx">
+      <DependentUpon>customer_acoountcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChickenBatch\daf.resx">
       <DependentUpon>daf.cs</DependentUpon>

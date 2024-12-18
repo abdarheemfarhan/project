@@ -35,7 +35,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dg = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.num_chack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.project = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.farm = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.qoulity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -62,11 +67,6 @@
             this.b_update = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.b_delete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.num_chack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.project = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.farm = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.qoulity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -95,6 +95,25 @@
             this.guna2Panel3.Size = new System.Drawing.Size(1008, 323);
             this.guna2Panel3.TabIndex = 23;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.guna2Button1.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(106, 275);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(99, 34);
+            this.guna2Button1.TabIndex = 22;
+            this.guna2Button1.Text = "طباعة";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // dg
             // 
@@ -164,6 +183,39 @@
             this.dg.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_CellValueChanged);
             this.dg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dg_EditingControlShowing);
             this.dg.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dg_RowsAdded);
+            // 
+            // num_chack
+            // 
+            this.num_chack.FillWeight = 99.10873F;
+            this.num_chack.HeaderText = "التفاصيل";
+            this.num_chack.MinimumWidth = 6;
+            this.num_chack.Name = "num_chack";
+            // 
+            // project
+            // 
+            this.project.FillWeight = 102.6738F;
+            this.project.HeaderText = "الدفعة";
+            this.project.MaxDropDownItems = 2;
+            this.project.MinimumWidth = 6;
+            this.project.Name = "project";
+            this.project.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.project.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // farm
+            // 
+            this.farm.FillWeight = 99.10873F;
+            this.farm.HeaderText = "المزرعة";
+            this.farm.MinimumWidth = 6;
+            this.farm.Name = "farm";
+            this.farm.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.farm.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // qoulity
+            // 
+            this.qoulity.FillWeight = 99.10873F;
+            this.qoulity.HeaderText = "الكمية";
+            this.qoulity.MinimumWidth = 6;
+            this.qoulity.Name = "qoulity";
             // 
             // guna2Button6
             // 
@@ -686,6 +738,7 @@
             this.b_update.Size = new System.Drawing.Size(135, 46);
             this.b_update.TabIndex = 21;
             this.b_update.Text = "تعديل";
+            this.b_update.Click += new System.EventHandler(this.b_update_Click);
             // 
             // guna2HtmlLabel11
             // 
@@ -719,58 +772,6 @@
             this.b_delete.TabIndex = 17;
             this.b_delete.Text = "حذف";
             this.b_delete.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
-            this.guna2Button1.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(106, 275);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(99, 34);
-            this.guna2Button1.TabIndex = 22;
-            this.guna2Button1.Text = "طباعة";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
-            // num_chack
-            // 
-            this.num_chack.FillWeight = 99.10873F;
-            this.num_chack.HeaderText = "التفاصيل";
-            this.num_chack.MinimumWidth = 6;
-            this.num_chack.Name = "num_chack";
-            // 
-            // project
-            // 
-            this.project.FillWeight = 102.6738F;
-            this.project.HeaderText = "الدفعة";
-            this.project.MaxDropDownItems = 2;
-            this.project.MinimumWidth = 6;
-            this.project.Name = "project";
-            this.project.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.project.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // farm
-            // 
-            this.farm.FillWeight = 99.10873F;
-            this.farm.HeaderText = "المزرعة";
-            this.farm.MinimumWidth = 6;
-            this.farm.Name = "farm";
-            this.farm.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.farm.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // qoulity
-            // 
-            this.qoulity.FillWeight = 99.10873F;
-            this.qoulity.HeaderText = "الكمية";
-            this.qoulity.MinimumWidth = 6;
-            this.qoulity.Name = "qoulity";
             // 
             // daf
             // 

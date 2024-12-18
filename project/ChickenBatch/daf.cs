@@ -203,5 +203,10 @@ namespace project.ChickenBatch
                 comboBox.DropDownHeight = 70;
             }
         }
+
+        private void b_update_Click(object sender, EventArgs e)
+        {
+
+        }
     }
  }

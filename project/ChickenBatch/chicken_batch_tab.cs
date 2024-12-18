@@ -65,6 +65,7 @@ namespace project.ChickenBatch
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             BindingContext[dt].AddNew();
+
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

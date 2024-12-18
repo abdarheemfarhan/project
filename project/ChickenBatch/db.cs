@@ -333,6 +333,17 @@ namespace project.ChickenBatch
             // طباعة نتيجة الاستجابة
             var responseString = await response.Content.ReadAsStringAsync();
         }
+        public static async void update_all(Dictionary<string, string> values, string link)
+        {
+
+            var client = new HttpClient();
+
+            var content = new FormUrlEncodedContent(values);
+            // إرسال البيانات إلى سكربت PHP
+            var response = await client.PostAsync(link, content);
+            // طباعة نتيجة الاستجابة
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
         public static async void update_chicken_batch_tab(string batch_id, int chicken_type, int project, int user, string date_in, int unknow, string details, string link)
         {
 
