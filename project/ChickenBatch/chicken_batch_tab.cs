@@ -158,7 +158,7 @@ namespace project.ChickenBatch
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            BindingContext[dt].Position = 0;
+            BindingContext[dt].Position = 1;
 
         }
     }

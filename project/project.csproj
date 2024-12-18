@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="ChickenBatch\areas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +74,17 @@
     <Compile Include="ChickenBatch\chicken.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="ChickenBatch\areas.cs" />
+    <Compile Include="ChickenBatch\areas.Designer.cs">
+      <DependentUpon>areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\batch_details.cs" />
+    <Compile Include="ChickenBatch\batch_details.Designer.cs">
+      <DependentUpon>batch_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\chicken.cs" />
+>>>>>>> Stashed changes
     <Compile Include="ChickenBatch\chicken.Designer.cs">
       <DependentUpon>chicken.cs</DependentUpon>
     </Compile>
@@ -82,9 +94,13 @@
     <Compile Include="ChickenBatch\chicken_batch_tab.Designer.cs">
       <DependentUpon>chicken_batch_tab.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="ChickenBatch\City.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="ChickenBatch\City.cs" />
+>>>>>>> Stashed changes
     <Compile Include="ChickenBatch\City.Designer.cs">
       <DependentUpon>City.cs</DependentUpon>
     </Compile>
@@ -107,6 +123,7 @@
       <DependentUpon>daf.cs</DependentUpon>
     </Compile>
     <Compile Include="ChickenBatch\db.cs" />
+<<<<<<< Updated upstream
     <Compile Include="ChickenBatch\farm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +133,13 @@
     <Compile Include="ChickenBatch\job.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="ChickenBatch\farm.cs" />
+    <Compile Include="ChickenBatch\farm.Designer.cs">
+      <DependentUpon>farm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\job.cs" />
+>>>>>>> Stashed changes
     <Compile Include="ChickenBatch\job.Designer.cs">
       <DependentUpon>job.cs</DependentUpon>
     </Compile>
@@ -125,6 +149,7 @@
     <Compile Include="ChickenBatch\project.Designer.cs">
       <DependentUpon>project.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="ChickenBatch\provinces.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +171,21 @@
     <Compile Include="ChickenBatch\users.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="ChickenBatch\provinces.cs" />
+    <Compile Include="ChickenBatch\provinces.Designer.cs">
+      <DependentUpon>provinces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\tr.cs" />
+    <Compile Include="ChickenBatch\tr.Designer.cs">
+      <DependentUpon>tr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\UserControl1.cs" />
+    <Compile Include="ChickenBatch\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenBatch\users.cs" />
+>>>>>>> Stashed changes
     <Compile Include="ChickenBatch\users.Designer.cs">
       <DependentUpon>users.cs</DependentUpon>
     </Compile>
